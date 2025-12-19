@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Dixmit
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="voip_pbx_form_view">
+        <field name="model">voip.pbx</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="test_connection"
+                        string="Test Connection"
+                        type="object"
+                        class="btn-primary"
+                    />
+                    <field name="connection_status" widget="badge" decoration-success="connection_status == 'connected'" decoration-warning="connection_status == 'connecting'" decoration-danger="connection_status in ('disconnected', 'error')"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="FreePBX Server"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Connection Settings">
+                            <field name="domain" placeholder="pbx.example.com"/>
+                            <field name="ws_server" placeholder="wss://pbx.example.com:8089/ws"/>
+                            <field name="mode" widget="radio"/>
+                        </group>
+                        <group string="Advanced Settings">
+                            <field name="external_ip" placeholder="203.0.113.1"/>
+                            <field name="stun_server"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Help" name="help">
+                            <div class="alert alert-info" role="alert">
+                                <h4>FreePBX Configuration</h4>
+                                <p>To connect Odoo to FreePBX, ensure the following:</p>
+                                <ol>
+                                    <li>Enable WSS transport in FreePBX (Settings → Asterisk SIP Settings → chan_pjsip → wss)</li>
+                                    <li>Create a WebRTC-enabled extension with:
+                                        <ul>
+                                            <li>AVPF: Yes</li>
+                                            <li>ICE Support: Yes</li>
+                                            <li>RTCP Mux: Yes</li>
+                                            <li>Media Encryption: DTLS</li>
+                                        </ul>
+                                    </li>
+                                    <li>Configure the extension credentials in user preferences</li>
+                                </ol>
+                            </div>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="voip_pbx_search_view">
+        <field name="model">voip.pbx</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="domain" />
+                <field name="mode" />
+                <filter name="active" string="Active" domain="[('active', '=', True)]"/>
+                <filter name="production" string="Production" domain="[('mode', '=', 'prod')]"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="voip_pbx_list_view">
+        <field name="model">voip.pbx</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name" />
+                <field name="domain" />
+                <field name="ws_server" />
+                <field name="mode" widget="badge" decoration-success="mode == 'prod'" decoration-warning="mode == 'test'"/>
+                <field name="connection_status" widget="badge" decoration-success="connection_status == 'connected'" decoration-warning="connection_status == 'connecting'" decoration-danger="connection_status in ('disconnected', 'error')"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </list>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="voip_pbx_act_window">
+        <field name="name">FreePBX Servers</field>
+        <field name="res_model">voip.pbx</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Configure your FreePBX server
+            </p>
+            <p>
+                Add your FreePBX/Asterisk server to enable VoIP calls directly from Odoo.
+            </p>
+        </field>
+    </record>
+
+    <record model="ir.ui.menu" id="voip_pbx_menu">
+        <field name="name">FreePBX Servers</field>
+        <field name="parent_id" ref="mail.mail_menu_technical" />
+        <field name="action" ref="voip_pbx_act_window" />
+        <field name="sequence" eval="16" />
+    </record>
+</odoo>

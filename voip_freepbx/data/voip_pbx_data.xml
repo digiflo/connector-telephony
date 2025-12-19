@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- FreePBX Default Configuration (Example) -->
+        <record id="pbx_freepbx_default" model="voip.pbx">
+            <field name="name">FreePBX Server</field>
+            <field name="domain">pbx.example.com</field>
+            <field name="ws_server">wss://pbx.example.com:8089/ws</field>
+            <field name="mode">test</field>
+        </record>
+    </data>
+</odoo>

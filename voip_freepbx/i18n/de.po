@@ -1,0 +1,393 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* voip_freepbx
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-18 14:00+0000\n"
+"PO-Revision-Date: 2025-12-18 14:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_voip_call__phone_number
+msgid "Phone Number"
+msgstr "Telefonnummer"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_voip_call__type_call
+msgid "Call Type"
+msgstr "Anruftyp"
+
+#. module: voip_freepbx
+#: model:ir.model.fields.selection,name:voip_freepbx.selection__voip_call__type_call__incoming
+msgid "Incoming"
+msgstr "Eingehend"
+
+#. module: voip_freepbx
+#: model:ir.model.fields.selection,name:voip_freepbx.selection__voip_call__type_call__outgoing
+msgid "Outgoing"
+msgstr "Ausgehend"
+
+#. module: voip_freepbx
+#: model:ir.model.fields.selection,name:voip_freepbx.selection__voip_call__state__aborted
+msgid "Aborted"
+msgstr "Abgebrochen"
+
+#. module: voip_freepbx
+#: model:ir.model.fields.selection,name:voip_freepbx.selection__voip_call__state__calling
+msgid "Calling"
+msgstr "Ruft an"
+
+#. module: voip_freepbx
+#: model:ir.model.fields.selection,name:voip_freepbx.selection__voip_call__state__missed
+msgid "Missed"
+msgstr "Verpasst"
+
+#. module: voip_freepbx
+#: model:ir.model.fields.selection,name:voip_freepbx.selection__voip_call__state__ongoing
+msgid "Ongoing"
+msgstr "Laufend"
+
+#. module: voip_freepbx
+#: model:ir.model.fields.selection,name:voip_freepbx.selection__voip_call__state__rejected
+msgid "Rejected"
+msgstr "Abgelehnt"
+
+#. module: voip_freepbx
+#: model:ir.model.fields.selection,name:voip_freepbx.selection__voip_call__state__terminated
+msgid "Terminated"
+msgstr "Beendet"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_voip_call__partner_id
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_voip_call__user_id
+msgid "Responsible"
+msgstr "Verantwortlich"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_voip_call__start_date
+msgid "Start Date"
+msgstr "Startdatum"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_voip_call__end_date
+msgid "End Date"
+msgstr "Enddatum"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_voip_pbx__name
+msgid "Name"
+msgstr "Name"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_voip_pbx__domain
+msgid "PBX Domain/IP"
+msgstr "PBX Domain/IP"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_voip_pbx__ws_server
+msgid "WebSocket URL"
+msgstr "WebSocket URL"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_voip_pbx__external_ip
+msgid "External IP"
+msgstr "Externe IP"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_voip_pbx__stun_server
+msgid "STUN Server"
+msgstr "STUN Server"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_voip_pbx__mode
+msgid "Environment"
+msgstr "Umgebung"
+
+#. module: voip_freepbx
+#: model:ir.model.fields.selection,name:voip_freepbx.selection__voip_pbx__mode__test
+msgid "Test"
+msgstr "Test"
+
+#. module: voip_freepbx
+#: model:ir.model.fields.selection,name:voip_freepbx.selection__voip_pbx__mode__prod
+msgid "Production"
+msgstr "Produktion"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_voip_pbx__connection_status
+msgid "Status"
+msgstr "Status"
+
+#. module: voip_freepbx
+#: model:ir.model.fields.selection,name:voip_freepbx.selection__voip_pbx__connection_status__disconnected
+msgid "Disconnected"
+msgstr "Getrennt"
+
+#. module: voip_freepbx
+#: model:ir.model.fields.selection,name:voip_freepbx.selection__voip_pbx__connection_status__connecting
+msgid "Connecting"
+msgstr "Verbinden"
+
+#. module: voip_freepbx
+#: model:ir.model.fields.selection,name:voip_freepbx.selection__voip_pbx__connection_status__connected
+msgid "Connected"
+msgstr "Verbunden"
+
+#. module: voip_freepbx
+#: model:ir.model.fields.selection,name:voip_freepbx.selection__voip_pbx__connection_status__error
+msgid "Error"
+msgstr "Fehler"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_res_users__voip_pbx_id
+msgid "PBX"
+msgstr "PBX"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_res_users__voip_username
+msgid "Username"
+msgstr "Benutzername"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_res_users__voip_password
+msgid "Password"
+msgstr "Passwort"
+
+#. module: voip_freepbx
+#: model:ir.ui.menu,name:voip_freepbx.menu_voip_pbx
+msgid "PBX Servers"
+msgstr "PBX Server"
+
+#. module: voip_freepbx
+#: model:ir.ui.menu,name:voip_freepbx.menu_voip_call
+msgid "Call History"
+msgstr "Anrufverlauf"
+
+#. module: voip_freepbx
+#: model:ir.actions.act_window,name:voip_freepbx.action_voip_pbx
+msgid "PBX Configuration"
+msgstr "PBX Konfiguration"
+
+#. module: voip_freepbx
+#: model:ir.actions.act_window,name:voip_freepbx.action_voip_call
+msgid "VoIP Calls"
+msgstr "VoIP Anrufe"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/components/call_list/call_list.esm.js:0
+msgid "Calls"
+msgstr "Anrufe"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/components/partner_list/partner_list.esm.js:0
+msgid "Contacts"
+msgstr "Kontakte"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/components/activity_list/activity_list.esm.js:0
+msgid "Activities"
+msgstr "Aktivitäten"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/services/voip_agent_service.esm.js:0
+msgid "Failed to load the SIP.js library:\n\n%(error)s"
+msgstr "SIP.js Bibliothek konnte nicht geladen werden:\n\n%(error)s"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/services/voip_agent_service.esm.js:0
+msgid "An error occurred during the instantiation of the User Agent:\n\n%(error)s"
+msgstr "Fehler bei der Initialisierung des User Agents:\n\n%(error)s"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/services/voip_agent_service.esm.js:0
+msgid "Failed to reconnect the User Agent. Please reload the page."
+msgstr "User Agent konnte nicht neu verbunden werden. Bitte Seite neu laden."
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/services/voip_agent_service.esm.js:0
+msgid "An error occurred during the connection:\n\n%(error)s"
+msgstr "Fehler bei der Verbindung:\n\n%(error)s"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/services/voip_agent_service.esm.js:0
+msgid "Failed to establish the call:\n\n%(error)s"
+msgstr "Anruf konnte nicht aufgebaut werden:\n\n%(error)s"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/services/voip_agent_service.esm.js:0
+msgid "Call rejected. Reason:\n\n%(reason)s"
+msgstr "Anruf abgelehnt. Grund:\n\n%(reason)s"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/services/voip_agent_service.esm.js:0
+msgid "Failed to put the call on hold/unhold:\n\n%(error)s"
+msgstr "Anruf konnte nicht gehalten/fortgesetzt werden:\n\n%(error)s"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/services/voip_agent_service.esm.js:0
+msgid "An error occurred during the registration of the User Agent:\n\n%(error)s"
+msgstr "Fehler bei der Registrierung des User Agents:\n\n%(error)s"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/utils/utils.esm.js:0
+msgid "less than a second"
+msgstr "weniger als eine Sekunde"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/utils/utils.esm.js:0
+msgid "1 second"
+msgstr "1 Sekunde"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/utils/utils.esm.js:0
+msgid "%(seconds)s seconds"
+msgstr "%(seconds)s Sekunden"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/utils/utils.esm.js:0
+msgid "1 minute"
+msgstr "1 Minute"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/utils/utils.esm.js:0
+msgid "2 minutes"
+msgstr "2 Minuten"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/utils/utils.esm.js:0
+msgid "%(minutes)s minutes"
+msgstr "%(minutes)s Minuten"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/utils/utils.esm.js:0
+msgid "%(minutes)s min %(seconds)s sec"
+msgstr "%(minutes)s Min %(seconds)s Sek"
+
+#. module: voip_freepbx
+#: model_terms:ir.ui.view,arch_db:voip_freepbx.res_users_view_form
+msgid "VOIP"
+msgstr "VoIP"
+
+#. module: voip_freepbx
+#: model_terms:ir.ui.view,arch_db:voip_freepbx.voip_pbx_view_form
+msgid "Test Connection"
+msgstr "Verbindung testen"
+
+#. module: voip_freepbx
+#: model_terms:ir.ui.view,arch_db:voip_freepbx.voip_pbx_view_form
+msgid "Connection Settings"
+msgstr "Verbindungseinstellungen"
+
+#. module: voip_freepbx
+#: model_terms:ir.ui.view,arch_db:voip_freepbx.voip_pbx_view_form
+msgid "Advanced Settings"
+msgstr "Erweiterte Einstellungen"
+
+#. module: voip_freepbx
+#: model_terms:ir.ui.view,arch_db:voip_freepbx.voip_pbx_view_form
+msgid "Help"
+msgstr "Hilfe"
+
+#. module: voip_freepbx
+#: model_terms:ir.ui.view,arch_db:voip_freepbx.voip_pbx_view_search
+msgid "Active"
+msgstr "Aktiv"
+
+#. module: voip_freepbx
+#: model:ir.model,name:voip_freepbx.model_voip_call
+msgid "Voip OCA Call"
+msgstr "VoIP Anruf"
+
+#. module: voip_freepbx
+#: model:ir.model,name:voip_freepbx.model_voip_pbx
+msgid "VoIP PBX Server Configuration"
+msgstr "VoIP PBX Server Konfiguration"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/components/softphone/softphone.xml:0
+msgid "Search"
+msgstr "Suchen"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/components/softphone/softphone.xml:0
+msgid "Open Numpad"
+msgstr "Tastatur öffnen"
+
+#. module: voip_freepbx
+#. odoo-javascript
+#: code:addons/voip_freepbx/static/src/components/softphone/softphone.xml:0
+msgid "Call"
+msgstr "Anrufen"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,help:voip_freepbx.field_voip_pbx__domain
+msgid "FreePBX server IP or domain (e.g., pbx.example.com)"
+msgstr "FreePBX Server IP oder Domain (z.B. pbx.example.com)"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,help:voip_freepbx.field_voip_pbx__ws_server
+msgid "WebSocket URL for WebRTC connection (e.g., wss://pbx.example.com:8089/ws)"
+msgstr "WebSocket URL für WebRTC Verbindung (z.B. wss://pbx.example.com:8089/ws)"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,help:voip_freepbx.field_voip_pbx__external_ip
+msgid "External IP address for NAT traversal"
+msgstr "Externe IP-Adresse für NAT-Traversal"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,help:voip_freepbx.field_voip_pbx__stun_server
+msgid "STUN server for WebRTC NAT traversal"
+msgstr "STUN Server für WebRTC NAT-Traversal"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_voip_call__activity_name
+msgid "Activity Name"
+msgstr "Aktivitätsname"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,help:voip_freepbx.field_voip_call__activity_name
+msgid "The name of the activity related to this phone call, if any."
+msgstr "Der Name der zugehörigen Aktivität, falls vorhanden."
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_mail_activity__main_partner_id
+msgid "Main Contact"
+msgstr "Hauptkontakt"
+
+#. module: voip_freepbx
+#: model:ir.model.fields,field_description:voip_freepbx.field_voip_pbx__company_id
+msgid "Company"
+msgstr "Unternehmen"
